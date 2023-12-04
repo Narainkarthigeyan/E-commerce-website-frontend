@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+</head>
+<style>
+  *{box-sizing: ;}
+    body{
+        background-image: url('back hd.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+
+    }
+    div.gallery {
+  border: 2px double white;
+}
+
+div.gallery:hover {
+  border: 4px solid greenyellow;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: greenyellow;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+div.gallery {
+  position: relative;
+  width: 150%;
+  max-width: 300px;
+  margin-left:50px;
+  margin-top:325px;
+  
+}
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height:15%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+div.gallery:hover .overlay {
+  opacity: 1;
+}
+
+</style>
+<body >
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_self" href="shampoo.html">
+            <img src="shampoo.png" alt="Shampoo bottle" class="=image">
+          </a>
+          <marquee><div class="desc">**Upto 25% discount**</div></marquee>
+          <div class="overlay">Shampoo</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_self" href="soap.html">
+            <img src="red wine soap.png" alt="A uncovered soap">
+          </a>
+          <marquee><div class="desc">**Buy 2 Get 1 Free**</div></marquee>
+          <div class="overlay">Soap</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_self" href="paste.html">
+            <img src="paste.png" alt="A tooth paste">
+          </a>
+          <marquee><div class="desc">**Kids Tooth Paste Now Available**</div></marquee>
+          <div class="overlay">Tooth paste</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_self" href="tt.html">
+            <img src="cart.jpeg" alt="a pic of Shopping cart" class="=image">
+          </a>
+          <marquee><div class="desc">**Your products**</div></marquee>
+          <div class="overlay">Cart</div>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+    
+
+
+    
+</body>
+</html>
